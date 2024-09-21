@@ -1,0 +1,180 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \\documentclass[12pt]\{report\}\
+\\usepackage[a4paper]\{geometry\} % Configuraci\'f3n de m\'e1rgenes y dimensiones de p\'e1gina\
+\
+\\usepackage[utf8]\{inputenc\} % Codificaci\'f3n de caracteres\
+\\usepackage[spanish]\{babel\} % Configuraci\'f3n de idioma espa\'f1ol\
+\\usepackage\{amssymb\} % S\'edmbolos matem\'e1ticos adicionales\
+\\usepackage\{subfigure\} % Creaci\'f3n de subfiguras dentro de una figura\
+\\usepackage\{newunicodechar\} % Soporte para caracteres Unicode\
+\\usepackage\{graphicx\} % Inclusi\'f3n de im\'e1genes\
+\\usepackage\{amsmath\} % Ampliaci\'f3n de funcionalidades matem\'e1ticas\
+\\usepackage\{xspace\} % Control del espacio despu\'e9s de comandos\
+\\usepackage\{booktabs\} % Mejora la apariencia de las tablas\
+\\usepackage[table,xcdraw]\{xcolor\} % Colores personalizados para tablas\
+\\usepackage\{url\} % Inclusi\'f3n y formato de enlaces URL\
+\\usepackage\{lineno\} % Numeraci\'f3n de l\'edneas\
+\\usepackage\{enumitem\} % Control de listas y enumeraciones\
+\\usepackage\{soul\} % Resaltado de texto con subrayado\
+\\usepackage[numbers]\{natbib\} % Citas bibliogr\'e1ficas y bibliograf\'eda\
+\\usepackage[colorlinks=true, bookmarks=false, citecolor=blue, urlcolor=blue, linkcolor=blue, linktoc=page]\{hyperref\} % Creaci\'f3n de enlaces y referencias\
+\\usepackage\{titlesec\} % Control del formato de t\'edtulos de secci\'f3n\
+\\usepackage\{fancyhdr\} % Personalizaci\'f3n de encabezados y pies de p\'e1gina\
+\\usepackage\{datetime\} % Manipulaci\'f3n de fechas y tiempos\
+% Modificar m\'e1rgenes\
+\\geometry\{left=2.5cm, right=2.5cm, top=2.0cm, bottom=2.0cm\}\
+% Espaciado entre l\'edneas\
+\\linespread\{1.5\} \
+% Cambiar nombre a tablas\
+\\addto\\captionsspanish\{\\renewcommand\{\\tablename\}\{Tabla\}\}\
+% Cambiar nombre a lista de tablas\
+\\addto\\captionsspanish\{\\renewcommand\{\\listtablename\}\{\'cdndice de tablas\}\}\
+% Modificar el estilo de los cap\'edtulos\
+\\titleformat\{\\chapter\}[display]\
+\{\\color\{black\}\\fontfamily\{pcr\}\\LARGE\\scshape\\raggedleft\}\
+\{\\chaptertitlename\\ \\color\{red\}\\fontsize\{20\}\{00\}\\mdseries\\thechapter\} \{-10pt\} \{\\color\{black\}\\rmfamily\\huge\}\
+%\\titlespacing*\{\\chapter\}\{0pt\}\{0pt\}\{50pt\}\
+% Dise\'f1o del encabezado y pie de p\'e1gina\
+\\pagestyle\{fancy\}\
+\\fancyhf\{\}\
+\\fancyhead[L]\{\\nouppercase\{\\leftmark\}\}\
+\\fancyhead[R]\{\\nouppercase\{\\rightmark\}\}\
+\\fancyfoot[C]\{\\thepage\}\
+\\renewcommand\{\\headrulewidth\}\{0.1pt\}\
+% Quitar espacio vertical en listas\
+\\setlist[itemize]\{noitemsep, topsep=0pt\}\
+% Numerar las secciones\
+\\setcounter\{secnumdepth\}\{4\} % Establece la profundidad de numeraci\'f3n de secciones\
+\\titleformat\{\\paragraph\}\{\\normalfont\\normalsize\\bfseries\}\{\\theparagraph\}\{1em\}\{\} % Define el formato de las subsubsubsecciones\
+% Modificar la tabla de contenido\
+\\setcounter\{tocdepth\}\{4\}\
+\\addto\\captionsspanish\{\\renewcommand\{\\contentsname\}\{Contenido\}\}\
+\
+\
+%%%%%%%%%%%%%%%%%%%%%%%%%%% AQUI INICIA EL DOCUMENTO %%%%%%%\
+\\begin\{document\}\
+\\pagenumbering\{Roman\}\
+%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%\
+\\begin\{titlepage\}\
+\\newgeometry\{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm\}\
+\\begin\{minipage\}[c]\{0.15\\textwidth\}\
+  \\centering\
+  \\includegraphics[width=\\textwidth]\{01_Figuras/00_TECNM.png\}\
+\\end\{minipage\}\
+\\hfill % Espacio horizontal entre las cajas\
+\\begin\{minipage\}[c]\{0.8\\textwidth\}\
+    \\centering\
+        \\textsc\{\\large Tecnol\'f3gico Nacional de M\'e9xico de Pabell\'f3n de Arteaga\}\\\\[0.3cm]\
+        \\textsc\{\\large Ingenier\'eda en Tecnol\'f3gias de la informaci\'f3n y Comunicaci\'f3n\}\\\\[0.3cm]\
+        \\hrule height1pt\
+        \\vspace\{0.1cm\}\
+        \\hrule height2pt\
+        \\vspace\{0.3cm\}\
+\\end\{minipage\}\
+\
+\\begin\{minipage\}[c]\{0.15\\textwidth\}\
+    \\vspace\{0.5cm\}\
+    \\hspace\{0.5cm\}\
+    \\vrule width1pt height15cm \
+    \\hspace\{0.05cm\}\
+    \\vrule width2pt height15cm\
+\\end\{minipage\}\
+\\hfill % Espacio horizontal entre las cajas\
+\\begin\{minipage\}[c]\{0.8\\textwidth\}\
+    \\centering\
+        \\textbf\{\\large ITPA: Event Management App\}\\\\[1cm]\
+        \\text\{\\large Por\}\\\\[1cm]\
+        \\text\{\\Large Alejandro Guevara de Luna\}\\\\[1cm]\
+        \\textit\{\\large Avance de implementaci\'f3n presentado al Departamento de Ingenier\'eda Tecnologias de la Informaci\'f3n y Comunicaci\'f3n\}\\\\[1cm]\
+        \\text\{\\large Profesor:\}\\\\[1cm]\
+        \\text\{\\Large Mto. Eduardo Flores Gallegos\}\\\\[1cm]\
+\\end\{minipage\}\
+\
+\\begin\{minipage\}[c]\{0.15\\textwidth\}\
+\\vspace\{0.5cm\}\
+  \\centering\
+  \\includegraphics[width=\\textwidth]\{01_Figuras/00_ITPA.png\}\
+\\end\{minipage\}\
+\\hfill % Espacio horizontal entre las cajas\
+\\begin\{minipage\}[c]\{0.8\\textwidth\}\
+    \\centering\
+        \\mdseries\{\\large Pabell\'f3n de Arteaga, Aguascalientes, \\the\\year\}\
+\\end\{minipage\}\
+\
+\\end\{titlepage\}\
+\\restoregeometry\
+%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUMEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
+\\thispagestyle\{empty\}\
+\\newgeometry\{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm\}\
+\\addcontentsline\{toc\}\{chapter\}\{Resumen\}\
+\\begin\{center\}\
+\\textsc\{\\Huge Resumen\}\\\\[0.5cm]\
+\\textbf\{\\large ...\}\\\\[0.25cm]\
+\\text\{\\large Por: Alejandro Guevara de Luna\}\\\\[0.5cm]\
+\\end\{center\}\
+\
+\
+\\begin\{flushright\}\
+    \\textit\{\\large Profesor:\}\\\\\
+    \\textit\{\\large Eduardo Flores Gallegos, Mto.\}\
+\\end\{flushright\}\
+\
+\
+\\restoregeometry\
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLA DE CONTENIDO %%%%%%%%%%%%%%%%%\
+\\tableofcontents\
+\
+\\newpage\
+\\pagenumbering\{arabic\}\
+\\chapter\{Introducci\'f3n\}\
+\
+\\citet\{NewmanGirvan2004\}\
+\
+\\newpage\
+\\pagenumbering\{arabic\}\
+\\chapter\{Objetivo\}\
+\
+\\section\{Objetivo General\}\
+\\large Implementar un sistema que permita a los estudiantes registrar su asistencia a eventos mediante su Credencial de estudiante y acceder a un historial de horas asistidas, desde una aplicaci\'f3n m\'f3vil.\
+\\section\{Objetivos especificos\}\
+1. Implementar una aplicaci\'f3n m\'f3vil que permita a los estudiantes consultar en tiempo real el total de horas asistidas a eventos, brindando una interfaz amigable y accesible. \\\\ [1cm]\
+2. Automatizar el proceso de registro de asistencia mediante el escaneo de la Credencial de estudiante, asegurando un sistema eficiente y preciso para capturar la participaci\'f3n de los alumnos en los eventos.\
+\
+\
+\\newpage\
+\\pagenumbering\{arabic\}\
+\\chapter\{Resumen Entrevista\}\
+\
+\\section\{\'bfQu\'e9 har\'e1 el sistema?\}\
+\
+El sistema registrar\'e1 todos los eventos del Tecnol\'f3gico de Pabell\'f3n. Los estudiantes, docentes y administrativos del Tecnol\'f3gico podr\'e1n registrarse en el sistema y estar al tanto de todos los eventos que se realicen. Si hay una conferencia espec\'edfica para alguna carrera, los alumnos podr\'e1n ingresar y conocer el evento. Adem\'e1s, se enviar\'e1 una notificaci\'f3n a los estudiantes 5 o 10 minutos antes del evento como recordatorio para que no falten. El acceso ser\'e1 para toda la comunidad del Tecnol\'f3gico y la idea es que se implemente en todo el instituto una vez que el sistema est\'e9 finalizado.\
+\
+\\section\{\'bfCu\'e1l ser\'eda la problem\'e1tica actual?\}\
+\
+La problem\'e1tica actual es que no existe un control sobre qui\'e9n asiste a ciertas conferencias o eventos. Como resultado, muchos alumnos no est\'e1n informados y a veces faltan a estas actividades, lo que afecta la organizaci\'f3n y el registro. Con el nuevo sistema, se tendr\'e1 un control m\'e1s completo, permitiendo que la mayor\'eda del personal y los estudiantes del Tec est\'e9n informados. Esto har\'e1 m\'e1s accesibles y visibles las conferencias, talleres y otras actividades que ofrece el Tecnol\'f3gico para toda la comunidad.\
+\
+\\section\{\'bfCu\'e1l era la forma de trabajo anterior?\}\
+\
+Antes, los estudiantes se registraban en hojas de papel cada vez que hab\'eda una conferencia. Los docentes o jefes de carrera avisaban a cada maestro sobre las conferencias y estos llevaban a sus grupos. Sin embargo, al no existir un registro adecuado, no se sab\'eda con precisi\'f3n qui\'e9n asist\'eda y qui\'e9n faltaba. Las hojas sol\'edan perderse y muchos alumnos no estaban enterados de los eventos, por lo que no asist\'edan. Con el nuevo sistema, se podr\'e1 llevar un control detallado de qui\'e9n asisti\'f3 y qui\'e9n no, adem\'e1s de que se enviar\'e1n recordatorios a los alumnos sobre los eventos.\
+\
+\\section\{\'bfQui\'e9n lo usar\'e1?\}\
+El sistema est\'e1 dise\'f1ado para que toda la comunidad del Tecnol\'f3gico lo use, incluidos estudiantes, docentes y administrativos. Todos tendr\'e1n acceso al sistema, y la idea es que una vez finalizado, se implemente en todo el Tecnol\'f3gico.\
+\
+\
+\\newpage\
+\\bibliographystyle\{elsarticle-num-names\}\
+\\bibliography\{03_Bibliografias.bib\}\
+\
+\
+\
+\
+\
+\
+\\end\{document\}\
+}
